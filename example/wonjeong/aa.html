@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'NeoDunggeunmo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  body {
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 2em )
+  }
+  
+  body,
+  html {
+      font: $font_sizepx 'NeoDunggeunmo', monospace;
+      background-color: $background_color;
+      height: 100%;
+      overflow: hidden
+  }
+  
+  #log {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0 0.5em 0.1em;
+      width: 100%;
+      box-sizing: border-box
+  }
+  
+  #log div {
+      background: #000;
+      box-shadow: 0 0 0 0.15em #fff, 0 0 0 0.3em #000;
+      margin: 0.8em 0.7em;
+      padding: 0.3em 0.4em;
+      padding-bottom: 0.3em;
+      line-height: 1.2em;
+      animation: fadeInUp .5s ease, fadeOut 1s ease $message_hide_delays forwards;
+      -webkit-animation: fadeInUp .5s ease, fadeOut 1s ease $message_hide_delays forwards
+  }
+  
+  .badge {
+      padding: 0.05em;
+  }
+  
+  .meta {
+      font-weight: 600;
+      margin-right: 0.3em
+  }
+  
+  .deleted {
+      visibility: hidden
+  }
+  
+  .message {
+      color: $text_color !important;
+      word-wrap: break-word;
+  }
+  
+  .badge,
+  .colon,
+  .name {
+      vertical-align: middle
+  }
+  
+  img {
+      width: 1em;
+      margin-right: 0.3em;
+      vertical-align: middle !important
+  }
+  
+  /* 닉네임 가독성 해결 */
+  span.meta[style="color: #00FF00"] {
+    color: #3FD83F !important
+  }
+  
+  span.meta[style="color: #0000FF"] {
+    color: #4586FF !important
+  }
+  
+  span.meta[style="color: #5F9EA0"] {
+    color: #56BFA8 !important
+  }
+  
+  span.meta[style="color: #B22222"] {
+    color: #FB6767 !important
+  }
+  
+  span.meta[style="color: #2E8B57"] {
+    color: #1CE048 !important
+  }
+  
+  span.meta[style="color: #191970"] {
+    color: #8383DE !important
+  }
+  
+  span.meta[style="color: #008000"] {
+    color: #49CC49 !important
+  }
+  
+  span.meta[style="color: #D2691E"] {
+    color: #DC8444 !important
+  }
+  
+  span.meta[style="color: #FF0000"] {
+    color: #FF4A4A !important
+  }
